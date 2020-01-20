@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Катерина Коротышева](https://up.htmlacademy.ru/htmlcss/27/user/1052393).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Кошара](https://htmlacademy.ru/profile/rednaxxxela).
 
 ---
 
