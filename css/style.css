@@ -1,3 +1,7 @@
+body {
+  background-color: #849d8f;
+}
+
 .visible-hidden {
   position: absolute;
   width: 1px;
@@ -7,4 +11,11 @@
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.circle-ice {
+  width: 267px;
+  height: 267px;
+  border-radius: 50%;
+  background-clip: content-box;
 }
