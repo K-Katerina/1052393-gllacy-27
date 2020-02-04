@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -35,8 +36,44 @@
           <li><a href="info.html">О Компании</a></li>
         </ul>
         <ul>
-          <li><button type="button">Поиск</button></li>
-          <li><button type="button">Вход</button></li>
+          <li><button type="button">Поиск</button>
+            <section>
+              <h2 class="visible-hidden">Личный кабинет</h2>
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <p>
+                  <label class="visible-hidden" for="user-login">Электронная почта</label>
+                  <input id="user-login" type="email" name="login" placeholder="Электронная почта">
+                </p>
+                <p>
+                  <label class="visible-hidden" for="user-password">Пароль</label>
+                  <input id="user-password" type="password" name="password" placeholder="Пароль">
+                </p>
+                <button type="submit">
+                  Войти
+                </button>
+                <p>
+                  <a href="#">Забыли пароль?</a>
+                </p>
+                <p>
+                  <a href="#">Новая регистрация</a>
+                </p>
+              </form>
+            </section>
+          </li>
+          <li><button type="button">Вход</button>
+            <section>
+              <h2 class="visible-hidden">Поиск</h2>
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <p>
+                  <label class="visible-hidden" for="appointment-search">Введите поисковый запрос</label>
+                  <input id="appointment-search" type="text" name="search" value="" placeholder="Что ищем?">
+                </p>
+                <button class="visible-hidden" type="submit">
+                  Найти
+                </button>
+              </form>
+            </section>
+          </li>
           <li><a href="cart.html">Пусто</a></li>
         </ul>
       </nav>
@@ -80,6 +117,7 @@
             </p>
             <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
           </a>
+          <button type="button">Быстрый просмотр</button>
         </article>
         <article>
           <a href="#">
@@ -90,6 +128,7 @@
             </p>
             <h3>Сливочно-кофейное с кусочками шоколада</h3>
           </a>
+          <button type="button">Быстрый просмотр</button>
         </article>
         <article>
           <a href="#">
@@ -100,6 +139,7 @@
             </p>
             <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
           </a>
+          <button type="button">Быстрый просмотр</button>
         </article>
         <article>
           <a href="#">
@@ -110,6 +150,7 @@
             </p>
             <h3>Сливочное крем-брюле с карамельной подливкой</h3>
           </a>
+          <button type="button">Быстрый просмотр</button>
         </article>
       </section>
       <section>
@@ -206,40 +247,6 @@
       <button type="button">
         Закрыть
       </button>
-    </section>
-    <section>
-      <h2 class="visible-hidden">Личный кабинет</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label class="visible-hidden" for="user-login">Электронная почта</label>
-          <input id="user-login" type="email" name="login" placeholder="Электронная почта">
-        </p>
-        <p>
-          <label class="visible-hidden" for="user-password">Пароль</label>
-          <input id="user-password" type="password" name="password" placeholder="Пароль">
-        </p>
-        <button type="submit">
-          Войти
-        </button>
-        <p>
-          <a href="#">Забыли пароль?</a>
-        </p>
-        <p>
-          <a href="#">Новая регистрация</a>
-        </p>
-      </form>
-    </section>
-    <section>
-      <h2 class="visible-hidden">Поиск</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label class="visible-hidden" for="appointment-search">Введите поисковый запрос</label>
-          <input id="appointment-search" type="text" name="search" value="" placeholder="Что ищем?">
-        </p>
-        <button class="visible-hidden" type="submit">
-          Найти
-        </button>
-      </form>
     </section>
   </body>
 </html>
