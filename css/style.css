@@ -21,8 +21,6 @@ body {
 }
 
 .circle-ice {
-  width: 267px;
-  height: 267px;
   border-radius: 50%;
   background-clip: content-box;
 }
