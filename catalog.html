@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -30,7 +31,7 @@
                     <img src="img/item1.jpg" width="32" height="32" alt="">
                     <span>Пломбир с апельсиновым джемом</span>
                   </a>
-                  <span>1,5 кг x <b>200 руб</b></span>
+                  <span>1,5 кг x <span>200 руб</span></span>
                   <span>300 руб</span>
                 </li>
                 <li>
@@ -39,7 +40,7 @@
                     <img src="img/item3.jpg" width="32" height="32" alt="">
                     <span>Клубничный пломбир с присыпкой  из белого шоколада</span>
                   </a>
-                  <span>1,5 кг x <b>300 руб</b></span>
+                  <span>1,5 кг x <span>300 руб</span></span>
                   <span>450 руб</span>
                 </li>
               </ul>
@@ -65,7 +66,72 @@
       </ul>
       <section>
         <h2 class="visible-hidden">Фильтр по сливочному мороженому</h2>
-        <!--Фильтры-->
+        <form name="filters" method="get" action="https://echo.htmlacademy.ru">
+          <div>
+            <fieldset>
+              <legend>Сортировка:</legend>
+              <select id="filters-sorting" name="filters-sorting">
+                <option value="popular">по популярности</option>
+                <option value="cheap">сначала недорогие</option>
+                <option value="expensive">сначала дорогие</option>
+                <option value="fat">по жирности</option>
+              </select>
+            </fieldset>
+            <fieldset>
+              <legend>Цена: 100 руб. - 500 руб.</legend>
+              <input type="range" id="range-price" name="range-price" min="0" max="800" step="50">
+            </fieldset>
+            <fieldset>
+              <legend>Жирность:</legend>
+              <ul>
+                <li>
+                  <input type="radio" id="fat-0" name="filters-fat" value="0">
+                  <label for="fat-0">0%</label>
+                </li>
+                <li>
+                  <input type="radio" id="fat-less-10" name="filters-fat" value="less-10" checked>
+                  <label for="fat-less-10">до 10%</label>
+                </li>
+                <li>
+                  <input type="radio" id="fat-less-30" name="filters-fat" value="less-30">
+                  <label for="fat-less-30">до 30%</label>
+                </li>
+                <li>
+                  <input type="radio" id="fat-more-30" name="filters-fat" value="more-30">
+                  <label for="fat-more-30">выше 30%</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div>
+            <fieldset>
+              <legend>Наполнители</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" id="filter-chocolate" name="filler-chocolate" checked>
+                  <label for="filter-chocolate">шоколадные</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="filter-shugar" name="filler-shugar" checked>
+                  <label for="filter-shugar">сахарные присыпки</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="filter-fruit" name="filler-fruit">
+                  <label for="filter-fruit">фрукты</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="filter-syrup" name="filler-syrup">
+                  <label for="filter-syrup">сиропы</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="filter-jam" name="filler-jam">
+                  <label for="filter-jam">джемы</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit">Применить</button>
+          </div>
+        </form>
       </section>
       <section>
         <h2>Сливочное мороженое</h2>
