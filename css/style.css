@@ -98,6 +98,8 @@ body {
 .map-contacts .tel:active,
 .news a:hover,
 .news a:active,
+.footer-info a:hover,
+.footer-info a:active,
 .basket-full li > a:hover,
 .basket-full li > a:active {
   color: #ffbc9e;
@@ -134,7 +136,7 @@ body {
   background-color: #dc5639;
 }
 
-.main-navigation {
+.main-nav {
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
@@ -352,6 +354,7 @@ body {
 }
 
 .map-contacts p {
+  color: #323232;
   font-size: 14px;
   line-height: 20px; 
 }
@@ -359,16 +362,12 @@ body {
 .map-contacts strong {
   font-size: 18px;
   line-height: 24px;
-  text-decoration: none;
+  display: block;
 }
 
 .map-contacts .tel {
   font-size: 18px;
   line-height: 22px;
-}
-
-.map-contacts strong{
-  display: block;
 }
 
 .main-contacts p {
@@ -379,7 +378,6 @@ body {
 }
 
 .main-contacts .tel {
-  color: #ffffff;
   font-size: 22px;
   line-height: 24px;
   font-weight: 700;
@@ -420,10 +418,6 @@ body {
   font-weight: 400;
 }
 
-.footer-info a:hover{
-  color: #ffbc9e;
-}
-
 .footer-copyright {
   color: #ffffff;
   font-size: 12px;
@@ -454,10 +448,10 @@ body {
   color: #323232;
 }
 
-/* .catalog-list,
+.catalog-list,
 .search,
 .user-login,
 .modal-subscription,
 .basket-full {
   display: none;
-} */
+}
