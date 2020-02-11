@@ -272,6 +272,7 @@ body {
   font-weight: 400;
   color: #323232;
   background-color: #f8f7f4;
+  width: 541px;
   border-radius: 5px;
 }
 
@@ -283,10 +284,14 @@ body {
   color: #999999;
 }
 
-.user-login {
-  font-size: 13px;
-  line-height: 24px;
-  font-weight: 400;
+.basket-total {
+  text-align: right;
+}
+
+.offers article {
+  width: 560px;
+  min-height: 230px;
+  border-radius: 15px;
 }
 
 .offers h2 {
@@ -301,6 +306,32 @@ body {
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
+}
+
+.offers .item-1 {
+  background-color: #8a0d28;
+  background-image: url("../img/back_berry.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.offers .item-2 {
+  background-color: #3a1e0c;
+  background-image: url("../img/back_choco.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.features {
+  border-radius: 15px;
+  min-height: 300px;
+  background-color: #ecdfc6;
+  background-image: url("../img/back_waf.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .features-list {
@@ -393,6 +424,17 @@ body {
   background-clip: content-box;
 }
 
+.news {
+  border-radius: 15px;
+  min-height: 222px;
+  min-width: 561px;
+  background-color: #f8f7f4;
+  background-image: url("../img/back_news.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .news h3 {
   font-size: 16px;
   line-height: 22px;
@@ -404,6 +446,18 @@ body {
   line-height: 30px;
   font-weight: 700;
   color: inherit;
+}
+
+.subscription {
+  min-height: 222px;
+  min-width: 561px;
+  border: 5px solid #fe9e90;
+  border-radius: 15px;
+  border-image: url("../img/bg-post.svg") 5 round round;
+  background-color: #f8f7f4;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .subscription p {
@@ -446,6 +500,29 @@ body {
 
 .current-page a {
   color: #323232;
+}
+
+.modal-subscription {
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  width: 478px;
+}
+
+.search {
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  padding: 3px;
+  width: 342px;
+}
+
+.user-login {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  width: 278px;
 }
 
 .catalog-list,
