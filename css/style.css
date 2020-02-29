@@ -275,7 +275,7 @@ body {
 .menu-catalog:hover .catalog-list {
   position: absolute;
   left: 0;
-  top: 40px;
+  top: 38px;
   z-index: 10;
 
   display: flex;
@@ -402,7 +402,7 @@ body {
 
   position: absolute;
   right: 0;
-  top: 40px;
+  top: 38px;
   z-index: 10;
 
   display: block;
@@ -423,6 +423,7 @@ body {
   border: 1px solid #d3d3d2;
   border-radius: 4px;
   height: 45px;
+  cursor: text;
 }
 
 .user-log:hover .user-login {
@@ -435,7 +436,7 @@ body {
 
   position: absolute;
   right: 0;
-  top: 40px;
+  top: 38px;
   z-index: 10;
 
   display: block;
@@ -457,6 +458,7 @@ body {
   border: 1px solid #d3d3d2;
   border-radius: 4px;
   height: 45px;
+  cursor: text;
 }
 
 .user-login .button {
@@ -490,7 +492,7 @@ body {
 
   position: absolute;
   right: 0;
-  top: 40px;
+  top: 38px;
   z-index: 10;
 
   display: block;
@@ -525,18 +527,27 @@ body {
 }
 
 .basket-full-item .del {
-  font-size: 0;
   margin-right: 8px;
+
+  position: relative;
+  width: 11px;
+  height: 11px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
 }
 
 .basket-full-item .del::before {
-  width: 12px;
-  height: 12px;
+  width: 11px;
+  height: 11px;
   background-image: url('../img/cross-small.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
   position: absolute;
   content: '';
   left: 0px;
-  top: 13px;
+  top: 0px;
   cursor: pointer;
 }
 
@@ -1006,6 +1017,7 @@ body {
   border: 1px solid #d3d3d2;
   border-radius: 4px;
   height: 45px;
+  cursor: text;
 }
 
 .subscription .button {
