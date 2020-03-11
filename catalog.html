@@ -100,7 +100,7 @@
                   <button type="button" class="del"><span class="visible-hidden">Удалить</span></button>
                   <a href="catalog-item.html">
                     <img src="img/item1.jpg" class="circle-ice" width="32" height="32" alt="Ярко-желтый апельсиновый джем с классическим белым пломбиром">
-                    <span>Пломбир с апельсиновым джемом</span>
+                    <span class="jjj">Пломбир с апельсиновым джемом</span>
                   </a>
                   <p>
                     <span>1,5 кг x <span class="light">200 руб</span></span>
@@ -113,7 +113,7 @@
                   <button type="button" class="del"><span class="visible-hidden">Удалить</span></button>
                   <a href="catalog-item.html">
                     <img src="img/item3.jpg" class="circle-ice" width="32" height="32" alt="Розовый клубничный пломбир с присыпкой из белого шоколада в форме сердечек">
-                    <span>Клубничный пломбир с присыпкой  из белого шоколада</span>
+                    <span class="jjj">Клубничный пломбир с присыпкой  из белого шоколада</span>
                   </a>
                   <p>
                     <span>1,5 кг x <span class="light">300 руб</span></span>
@@ -135,7 +135,6 @@
       <div class="wrapper">
         <h1 class="visible-hidden">Каталог мороженого интернет-магазина «Gllacy Shop»</h1>
         <section class="main-contacts">
-          <h2 class="visible-hidden">Часы работы и телефон</h2>
           <p>С&nbsp;10 до&nbsp;20, ежедневно</p>
           <a href="tel:88124502525" class="tel">8&nbsp;812&nbsp;450-25-25</a>
         </section>
@@ -156,39 +155,46 @@
             <div class="filters-wrapper">
               <fieldset>
                 <legend>Сортировка:</legend>
-                <div class="filters-background">
+                <div class="filters-background filters-wrapper-select">
                   <select id="filters-sorting" name="filters-sorting" class="filters-select">
                     <option value="popular">по популярности</option>
                     <option value="cheap">сначала недорогие</option>
                     <option value="expensive">сначала дорогие</option>
                     <option value="fat">по жирности</option>
                   </select>
+                  <svg class="icon-down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
                 </div>
               </fieldset>
-              <fieldset>
-                <legend>Цена: 100 руб. - 500 руб.</legend>
+              <fieldset class="ranges">
+                <legend>Цена: 100 руб. – 500 руб.</legend>
                 <div class="filters-background">
-                  <input type="range" id="range-price" name="range-price" min="0" max="800" step="50">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="range-toggle range-toggle-min"></div>
+                    <div class="range-toggle range-toggle-max"></div>
+                  </div>
                 </div>
               </fieldset>
               <fieldset>
                 <legend>Жирность:</legend>
-                <div class="filters-background">
+                <div class="filters-background filters-background-check">
                   <ul class="fat">
                     <li>
-                      <input type="radio" id="fat-0" name="filters-fat" value="0">
+                      <input class="radio-filter" type="radio" id="fat-0" name="filters-fat" value="0">
                       <label for="fat-0">0%</label>
                     </li>
                     <li>
-                      <input type="radio" id="fat-less-10" name="filters-fat" value="less-10" checked>
+                      <input class="radio-filter" type="radio" id="fat-less-10" name="filters-fat" value="less-10" checked>
                       <label for="fat-less-10">до 10%</label>
                     </li>
                     <li>
-                      <input type="radio" id="fat-less-30" name="filters-fat" value="less-30">
+                      <input class="radio-filter" type="radio" id="fat-less-30" name="filters-fat" value="less-30">
                       <label for="fat-less-30">до 30%</label>
                     </li>
                     <li>
-                      <input type="radio" id="fat-more-30" name="filters-fat" value="more-30">
+                      <input class="radio-filter" type="radio" id="fat-more-30" name="filters-fat" value="more-30">
                       <label for="fat-more-30">выше 30%</label>
                     </li>
                   </ul>
@@ -198,26 +204,26 @@
             <div class="filters-wrapper">
               <fieldset>
                 <legend>Наполнители</legend>
-                <div class="filters-background">
+                <div class="filters-background filters-background-check">
                   <ul class="fillers">
                     <li>
-                      <input type="checkbox" id="filter-chocolate" name="filler-chocolate" checked>
+                      <input class="checkbox-filter" type="checkbox" id="filter-chocolate" name="filler-chocolate" checked>
                       <label for="filter-chocolate">шоколадные</label>
                     </li>
                     <li>
-                      <input type="checkbox" id="filter-shugar" name="filler-shugar" checked>
+                      <input class="checkbox-filter" type="checkbox" id="filter-shugar" name="filler-shugar" checked>
                       <label for="filter-shugar">сахарные присыпки</label>
                     </li>
                     <li>
-                      <input type="checkbox" id="filter-fruit" name="filler-fruit">
+                      <input class="checkbox-filter" type="checkbox" id="filter-fruit" name="filler-fruit">
                       <label for="filter-fruit">фрукты</label>
                     </li>
                     <li>
-                      <input type="checkbox" id="filter-syrup" name="filler-syrup">
+                      <input class="checkbox-filter" type="checkbox" id="filter-syrup" name="filler-syrup">
                       <label for="filter-syrup">сиропы</label>
                     </li>
                     <li>
-                      <input type="checkbox" id="filter-jam" name="filler-jam">
+                      <input class="checkbox-filter" type="checkbox" id="filter-jam" name="filler-jam">
                       <label for="filter-jam">джемы</label>
                     </li>
                   </ul>
@@ -365,7 +371,10 @@
           </div>
         </section>
         <ul class="pagination">
-          <li class="current-page">
+          <li class="prev-page">
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#C1C6CE" d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z"/></svg>
+          </li>
+          <li class="current">
             <a>1</a>
           </li>
           <li>
@@ -380,8 +389,10 @@
           <li>
             <a href="#">5</a>
           </li>
-          <li>
-            <a href="#">></a>
+          <li class="next-page">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#C1C6CE" d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z"/></svg>
+            </a>
           </li>
         </ul>
       </div>
