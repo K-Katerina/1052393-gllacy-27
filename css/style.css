@@ -1487,8 +1487,17 @@ body {
   opacity: 1;
 }
 
-.checkbox-filter:disabled + label::before {
+.checkbox-filter:disabled + label::before,
+.radio-filter:disabled + label::before,
+.radio-filter:disabled + label::after {
   opacity: 0.1;
+}
+
+.checkbox-filter:disabled:hover + label::before,
+.radio-filter:disabled:hover + label::before,
+.radio-filter:disabled:hover + label::after {
+  opacity: 0.1;
+  cursor: not-allowed;
 }
 
 .filters-background {
