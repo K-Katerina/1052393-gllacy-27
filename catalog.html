@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -182,19 +182,19 @@
                 <div class="filters-background filters-background-check">
                   <ul class="fat">
                     <li>
-                      <input class="radio-filter" type="radio" id="fat-0" name="filters-fat" value="0">
+                      <input class="visible-hidden radio-filter" type="radio" id="fat-0" name="filters-fat" value="0">
                       <label for="fat-0">0%</label>
                     </li>
                     <li>
-                      <input class="radio-filter" type="radio" id="fat-less-10" name="filters-fat" value="less-10" checked>
+                      <input class="visible-hidden radio-filter" type="radio" id="fat-less-10" name="filters-fat" value="less-10" checked>
                       <label for="fat-less-10">до 10%</label>
                     </li>
                     <li>
-                      <input class="radio-filter" type="radio" id="fat-less-30" name="filters-fat" value="less-30">
+                      <input class="visible-hidden radio-filter" type="radio" id="fat-less-30" name="filters-fat" value="less-30">
                       <label for="fat-less-30">до 30%</label>
                     </li>
                     <li>
-                      <input class="radio-filter" type="radio" id="fat-more-30" name="filters-fat" value="more-30">
+                      <input class="visible-hidden radio-filter" type="radio" id="fat-more-30" name="filters-fat" value="more-30">
                       <label for="fat-more-30">выше 30%</label>
                     </li>
                   </ul>
@@ -207,23 +207,23 @@
                 <div class="filters-background filters-background-check">
                   <ul class="fillers">
                     <li>
-                      <input class="checkbox-filter" type="checkbox" id="filter-chocolate" name="filler-chocolate" checked>
+                      <input class="visible-hidden checkbox-filter" type="checkbox" id="filter-chocolate" name="filler-chocolate" checked>
                       <label for="filter-chocolate">шоколадные</label>
                     </li>
                     <li>
-                      <input class="checkbox-filter" type="checkbox" id="filter-shugar" name="filler-shugar" checked>
+                      <input class="visible-hidden checkbox-filter" type="checkbox" id="filter-shugar" name="filler-shugar" checked>
                       <label for="filter-shugar">сахарные присыпки</label>
                     </li>
                     <li>
-                      <input class="checkbox-filter" type="checkbox" id="filter-fruit" name="filler-fruit">
+                      <input class="visible-hidden checkbox-filter" type="checkbox" id="filter-fruit" name="filler-fruit">
                       <label for="filter-fruit">фрукты</label>
                     </li>
                     <li>
-                      <input class="checkbox-filter" type="checkbox" id="filter-syrup" name="filler-syrup">
+                      <input class="visible-hidden checkbox-filter" type="checkbox" id="filter-syrup" name="filler-syrup">
                       <label for="filter-syrup">сиропы</label>
                     </li>
                     <li>
-                      <input class="checkbox-filter" type="checkbox" id="filter-jam" name="filler-jam">
+                      <input class="visible-hidden checkbox-filter" type="checkbox" id="filter-jam" name="filler-jam">
                       <label for="filter-jam">джемы</label>
                     </li>
                   </ul>
@@ -238,9 +238,9 @@
           <div class="products-items">
             <article class="item-products">
               <a href="#">
-                <div><img class="circle-ice" src="img/item1.jpg" width="267" height="267" alt=""></div>
+                <div><img class="circle-ice" src="img/item1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></div>
                 <p class="products-price">
-                  310₽<span class="products-weight">/кг</span>
+                  <span class="price">310</span><span class="products-weight">/кг</span>
                 </p>
                 <h3 class="products-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
               </a>
@@ -248,9 +248,9 @@
             </article>
             <article class="item-products">
               <a href="#">
-                <div><img class="circle-ice" src="img/item2.jpg" width="267" height="267" alt=""></div>
+                <div><img class="circle-ice" src="img/item2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада"></div>
                 <p class="products-price">
-                  380₽<span class="products-weight">/кг</span>
+                  <span class="price">380</span><span class="products-weight">/кг</span>
                 </p>
                 <h3 class="products-title">Сливочно-кофейное с кусочками шоколада</h3>
               </a>
@@ -258,9 +258,9 @@
             </article>
             <article class="item-products">
               <a href="#">
-                <div><img class="circle-ice" src="img/item3.jpg" width="267" height="267" alt=""></div>
+                <div><img class="circle-ice" src="img/item3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада"></div>
                 <p class="products-price">
-                  355₽<span class="products-weight">/кг</span>
+                  <span class="price">355</span><span class="products-weight">/кг</span>
                 </p>
                 <h3 class="products-title">Сливочно-клубничное с присыпкой из белого шоколада</h3>
               </a>
@@ -268,9 +268,9 @@
             </article>
             <article class="item-products">
               <a href="#">
-                <div><img class="circle-ice" src="img/item4.jpg" width="267" height="267" alt=""></div>
+                <div><img class="circle-ice" src="img/item4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></div>
                 <p class="products-price">
-                  310₽<span class="products-weight">/кг</span>
+                  <span class="price">415</span><span class="products-weight">/кг</span>
                 </p>
                 <h3 class="products-title">Сливочное крем-брюле с карамельной подливкой</h3>
               </a>
@@ -278,9 +278,9 @@
             </article>
             <article class="item-products">
               <a href="#">
-                <div><img class="circle-ice" src="img/item5.jpg" width="267" height="267" alt=""></div>
+                <div><img class="circle-ice" src="img/item5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом"></div>
                 <p class="products-price">
-                  325₽<span class="products-weight">/кг</span>
+                  <span class="price">325</span><span class="products-weight">/кг</span>
                 </p>
                 <h3 class="products-title">Сливочное с брусничным джемом</h3>
               </a>
@@ -288,9 +288,9 @@
             </article>
             <article class="item-products">
               <a href="#">
-                <div><img class="circle-ice" src="img/item6.jpg" width="267" height="267" alt=""></div>
+                <div><img class="circle-ice" src="img/item6.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники"></div>
                 <p class="products-price">
-                  410₽<span class="products-weight">/кг</span>
+                  <span class="price">410</span><span class="products-weight">/кг</span>
                 </p>
                 <h3 class="products-title">Сливочно-черничное с цельными ягодами черники</h3>
               </a>
@@ -298,9 +298,9 @@
             </article>
             <article class="item-products">
               <a href="#">
-                <div><img class="circle-ice" src="img/item7.jpg" width="267" height="267" alt=""></div>
+                <div><img class="circle-ice" src="img/item7.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой"></div>
                 <p class="products-price">
-                  375₽<span class="products-weight">/кг</span>
+                  <span class="price">375</span><span class="products-weight">/кг</span>
                 </p>
                 <h3 class="products-title">Сливочно-лимонное с карамельной присыпкой</h3>
               </a>
@@ -308,9 +308,9 @@
             </article>
             <article class="item-products">
               <a href="#">
-                <div><img class="circle-ice" src="img/item8.jpg" width="267" height="267" alt=""></div>
+                <div><img class="circle-ice" src="img/item8.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой"></div>
                 <p class="products-price">
-                  320₽<span class="products-weight">/кг</span>
+                  <span class="price">320</span><span class="products-weight">/кг</span>
                 </p>
                 <h3 class="products-title">Сливочное с шоколадной стружкой</h3>
               </a>
@@ -318,9 +318,9 @@
             </article>
             <article class="item-products">
               <a href="#">
-                <div><img class="circle-ice" src="img/item9.jpg" width="267" height="267" alt=""></div>
+                <div><img class="circle-ice" src="img/item9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада"></div>
                 <p class="products-price">
-                  440₽<span class="products-weight">/кг</span>
+                  <span class="price">440</span><span class="products-weight">/кг</span>
                 </p>
                 <h3 class="products-title">Сливочно-ванильное с кусочками шоколада</h3>
               </a>
@@ -328,9 +328,9 @@
             </article>
             <article class="item-products">
               <a href="#">
-                <div><img class="circle-ice" src="img/item10.jpg" width="267" height="267" alt=""></div>
+                <div><img class="circle-ice" src="img/item10.jpg" width="267" height="267" alt="Сливочное с ментоловым сиропом"></div>
                 <p class="products-price">
-                  435₽<span class="products-weight">/кг</span>
+                  <span class="price">435</span><span class="products-weight">/кг</span>
                 </p>
                 <h3 class="products-title">Сливочное с ментоловым сиропом</h3>
               </a>
@@ -338,9 +338,9 @@
             </article>
             <article class="item-products">
               <a href="#">
-                <div><img class="circle-ice" src="img/item11.jpg" width="267" height="267" alt=""></div>
+                <div><img class="circle-ice" src="img/item11.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада"></div>
                 <p class="products-price">
-                  355₽<span class="products-weight">/кг</span>
+                  <span class="price">355</span><span class="products-weight">/кг</span>
                 </p>
                 <h3 class="products-title">Сливочное с кусочками черного шоколада</h3>
               </a>
@@ -348,9 +348,9 @@
             </article>
             <article class="item-products">
               <a href="#">
-                <div><img class="circle-ice" src="img/item12.jpg" width="267" height="267" alt=""></div>
+                <div><img class="circle-ice" src="img/item12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом"></div>
                 <p class="products-price">
-                  420₽<span class="products-weight">/кг</span>
+                  <span class="price">420</span><span class="products-weight">/кг</span>
                 </p>
                 <h3 class="products-title">Сливочное с мятным сиропом</h3>
               </a>

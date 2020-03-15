@@ -39,7 +39,7 @@
 body {
   min-width: 960px;
 
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
@@ -56,7 +56,7 @@ body {
 
 .site-wrapper {
   background-color: #849d8f;
-  background-image: url("../img/two_ice1.png");
+  background-image: url('../img/two_ice1.png');
   background-repeat: no-repeat;
   background-position: top center;
   margin: 0 auto;
@@ -167,8 +167,7 @@ body {
 .main-nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  align-items: flex-start;
 
   font-size: 16px;
   line-height: 18px;
@@ -186,7 +185,11 @@ body {
 .site-navigation,
 .user-navigation {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.site-navigation,
+.user-navigation {
   flex-wrap: wrap;
 }
 
@@ -195,23 +198,26 @@ body {
 }
 
 .user-navigation {
-  min-width: 245px;
-  padding-top: 8px;
+  min-width: 263px;
+  padding-top: 23px;
+  justify-content: flex-end;
 }
 
 .site-navigation {
-  padding-top: 8px;
+  padding-top: 22px;
 }
 
 .site-navigation a {
   padding: 8px 14px;
   height: 32px;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .navigation-button {
   padding: 7px 16px;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .user-navigation li {
@@ -225,6 +231,7 @@ body {
 
 .navigation-item span {
   display: inline-block;
+  vertical-align: middle;
   text-decoration: none;
   border-bottom: 1px rgba(211, 211, 210, 0.2) solid;
 }
@@ -502,6 +509,7 @@ body {
 
 .user-login .button {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .flex-login-wrapper {
@@ -785,7 +793,7 @@ body {
 
 .products-items {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
 }
@@ -796,6 +804,11 @@ body {
   margin-bottom: 36px;
   text-align: center;
   position: relative;
+  margin-right: 22px;
+}
+
+.products-items :nth-child(4n) {
+  margin-right: 0px;
 }
 
 .item-products a {
@@ -837,11 +850,29 @@ body {
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
+  
 
   position: absolute;
   text-align: left;
   z-index: 20;
   top: 209px;
+}
+
+.products-price .price {
+  padding-right: 34px;
+  position: relative;
+}
+
+.products-price .price::after {
+  width: 31px;
+  height: 36px;
+  background-image: url('../img/ruble.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  content: '';
+  right: 0px;
+  bottom: 8px;
 }
 
 .item-products::after {
@@ -978,7 +1009,7 @@ body {
   
   padding-top: 270px;
   margin-bottom: 42px;
-  height: 482px;
+  min-height: 482px;
   text-align: center;
   color: #ffffff;
 }
@@ -1015,17 +1046,17 @@ body {
 
 #product-1:checked ~ .site-wrapper {
   background-color: #849d8f;
-  background-image: url("../img/two_ice1.png");
+  background-image: url('../img/two_ice1.png');
 }
 
 #product-2:checked ~ .site-wrapper {
   background-color: #8996a6;
-  background-image: url("../img/two_ice2.png");
+  background-image: url('../img/two_ice2.png');
 }
 
 #product-3:checked ~ .site-wrapper {
   background-color: #9d8b84;
-  background-image: url("../img/two_ice3.png");
+  background-image: url('../img/two_ice3.png');
 }
 
 #product-1:checked ~ .site-wrapper #slide1,
@@ -1034,9 +1065,9 @@ body {
   display: block;
 }
 
-#product-1:checked ~ .site-wrapper label[for="product-1"],
-#product-2:checked ~ .site-wrapper label[for="product-2"],
-#product-3:checked ~ .site-wrapper label[for="product-3"] {
+#product-1:checked ~ .site-wrapper label[for='product-1'],
+#product-2:checked ~ .site-wrapper label[for='product-2'],
+#product-3:checked ~ .site-wrapper label[for='product-3'] {
   background-color: #ffffff;
 }
 
@@ -1059,7 +1090,7 @@ body {
   line-height: 60.35px;
   font-weight: 700;
   width: 680px;
-  height: 135px;
+  min-height: 135px;
 
   margin: 0 auto;
   margin-bottom: 15px;
@@ -1412,11 +1443,6 @@ body {
   fill: #323232;
 }
 
-.filter-section input[type="checkbox"],
-.filter-section input[type="radio"] {
-  display: none; 
-}
-
 .filter-section label {
   display: block;
   cursor: pointer;
@@ -1453,7 +1479,7 @@ body {
 .radio-filter:checked:focus + label::after,
 .radio-filter:hover + label::after,
 .radio-filter:focus + label::after {
-  border: 3.4px solid rgba(255, 255, 255, 1);
+  border: 3.4px solid rgb(255, 255, 255);
 }
 
 .radio-filter:checked:hover + label::before,
@@ -1470,20 +1496,20 @@ body {
   left: 0;
   width: 23px;
   height: 23px;
-  background-image: url("../img/checkbox-off.svg");
+  background-image: url('../img/checkbox-off.svg');
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.7;
 }
 
 .checkbox-filter:checked + label::before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0px;
   left: 0px;
   width: 27px;
   height: 23px;
-  background-image: url("../img/checkbox-on.svg");
+  background-image: url('../img/checkbox-on.svg');
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.7;
@@ -1491,7 +1517,8 @@ body {
 
 .checkbox-filter:checked:hover + label::before,
 .checkbox-filter:checked:focus + label::before,
-.checkbox-filter:hover + label::before {
+.checkbox-filter:hover + label::before,
+.checkbox-filter:focus + label::before {
   opacity: 1;
 }
 
@@ -1617,7 +1644,7 @@ body {
   border: none;
 }
 
-.pagination li:not([class$="page"]) {
+.pagination li:not([class$='page']) {
   padding: 3px 8px;
   font-size: 16px;
   line-height: 18px;
@@ -1630,13 +1657,13 @@ body {
   cursor: pointer;
 }
 
-.pagination li:not([class$="page"]):hover {
+.pagination li:not([class$='page']):hover {
   background-color: #f8f7f42e;
   border-radius: 30px;
   color: #f8f7f4;
 }
 
-.pagination li:not([class$="page"]):active {
+.pagination li:not([class$='page']):active {
   background-color: #f8f7f4;
   border-radius: 30px;
   opacity: 1;
