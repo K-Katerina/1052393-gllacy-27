@@ -205,6 +205,7 @@ body {
 
 .site-navigation {
   padding-top: 22px;
+  min-width: 380px;
 }
 
 .site-navigation a {
