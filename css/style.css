@@ -1385,6 +1385,10 @@ body {
   padding-right: 15px;
 }
 
+.filters-wrapper-select:hover .filters-select {
+  color: #323232;
+}
+
 .filters-select option {
   color: #323232;
 }
@@ -1402,6 +1406,10 @@ body {
 
 .icon-down path {
   fill: #fefefe;
+}
+
+.filters-wrapper-select:hover path {
+  fill: #323232;
 }
 
 .filter-section input[type="checkbox"],
@@ -1809,7 +1817,31 @@ body {
   content: '';
 }
 
-.range-toggle:hover {
+.range-toggle-max:hover::after,
+.range-toggle-min:hover::after {
+  top: 9px;
+  left: 9px;
+}
+
+.range-toggle-min:hover {
+  top: -9px;
+  left: 17px;
+  width: 22px;
+  height: 22px;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle-max:hover {
+  top: -9px;
+  right: 43px;
+  width: 22px;
+  height: 22px;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
 
