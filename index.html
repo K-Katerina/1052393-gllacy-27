@@ -198,7 +198,7 @@
           </section>
           <section class="features">
             <h2 class="visible-hidden">Наши преимущества</h2>
-            <p>Магазин <span>Глэйси</span> — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
+            <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
             <ul class="features-list">
               <li class="features-item-1">
                 Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
@@ -312,20 +312,6 @@
         <button type="button" class="close">Закрыть</button>
       </section>
     </div>
-    <script>
-      var link = document.querySelector(".modal-subscription-link");
-      var popup = document.querySelector(".modal-subscription");
-      var close = popup.querySelector(".close");
-
-      link.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.add("modal-show");
-      });
-      
-      close.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.remove("modal-show");
-      });
-    </script>
+    <script src="js/bundle.js"></script>
   </body>
 </html>

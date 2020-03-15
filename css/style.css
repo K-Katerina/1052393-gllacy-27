@@ -768,10 +768,6 @@ body {
   margin-bottom: 8px;
 }
 
-.features span {
-  letter-spacing: 1px;
-}
-
 .main-title {
   font-size: 35px;
   line-height: 41px;
@@ -845,7 +841,7 @@ body {
   position: absolute;
   text-align: left;
   z-index: 20;
-  top: 211px;
+  top: 209px;
 }
 
 .item-products::after {
@@ -1385,8 +1381,12 @@ body {
   -moz-appearance: none;
   appearance: none;
 
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 9px;
+  padding-right: 15px;
+}
+
+.filters-select option {
+  color: #323232;
 }
 
 .filters-select::-ms-expand {
@@ -1769,10 +1769,9 @@ body {
 .range-toggle {
   position: absolute;
   top: -8px;
-  width: 4px;
-  height: 4px;
-  background: #9a9898;
-  border: 10px solid #ffffff;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
@@ -1784,6 +1783,30 @@ body {
 
 .range-toggle-max {
   right: 44px;
+}
+
+.range-toggle-max::after {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: #ababab;
+  border-radius: 50%;
+  content: '';
+}
+
+.range-toggle-min::after {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: #ababab;
+  border-radius: 50%;
+  content: '';
 }
 
 .range-toggle:hover {
