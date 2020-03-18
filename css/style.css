@@ -204,12 +204,12 @@ body {
 }
 
 .site-navigation {
-  padding-top: 22px;
+  padding-top: 24px;
   min-width: 380px;
 }
 
 .site-navigation a {
-  padding: 8px 14px;
+  padding: 6px 14px;
   height: 32px;
   display: inline-block;
   vertical-align: middle;
@@ -284,13 +284,7 @@ body {
   border: none;
   cursor: pointer;
 
-  padding: 8px 14px;
-  height: 32px;
   width: 87px;
-}
-
-.site-navigation .menu-catalog {
-  padding-left: 1px;
 }
 
 .navigation-item-current span {
