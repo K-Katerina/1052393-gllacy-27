@@ -1893,8 +1893,6 @@ body {
   animation-duration: 0.6s;
 }
 
-.modal-subscription .error-input,
-.subscription .error-input,
-.user-login .error-input {
+.modal-subscription .error-input {
   border: 2px solid #e3382cc6;
 }
