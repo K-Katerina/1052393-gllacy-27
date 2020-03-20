@@ -11,7 +11,7 @@ var storageLogin = "";
 var storageEmail = "";
 
 try {
-  storageLogin = localStorage.getItem("login");
+  storageLogin = localStorage.getItem("name");
   storageEmail = localStorage.getItem("email");
 } catch (err) {
   isStorageSupport = false;
@@ -33,18 +33,33 @@ link.addEventListener("click", function (evt) {
   }
 });
 
-form.addEventListener('submit', function (evt) {
+form.addEventListener("submit", function (evt) {
   if (!login.value || !email.value) {
     evt.preventDefault();
     popup.classList.remove("modal-error");
-    popup.offsetWidth = popup.offsetWidth;
+    if (!email.value) {
+      email.classList.add("error-input");
+      email.focus();
+    }
+    if (!login.value) {
+      login.classList.add("error-input");
+      login.focus();
+    }
     popup.classList.add("modal-error");
   } else {
     if (isStorageSupport) {
-      localStorage.setItem("login", login.value);
+      localStorage.setItem("name", login.value);
       localStorage.setItem("email", email.value);
     }
   }
+});
+
+login.addEventListener("input", function (evt) {
+  login.classList.remove("error-input");
+});
+
+email.addEventListener("input", function (evt) {
+  email.classList.remove("error-input");
 });
 
 close.addEventListener("click", function (evt) {
