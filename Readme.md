@@ -1,4 +1,4 @@
-# Личный проект [«Глейси»] (https://k-katerina.github.io/1052393-gllacy-27/)
+# Личный проект [«Глейси»](https://k-katerina.github.io/1052393-gllacy-27/)
 
 * Студент: [Катерина Коротышева](https://up.htmlacademy.ru/htmlcss/27/user/1052393).
 * Наставник: [Александр Кошара](https://htmlacademy.ru/profile/rednaxxxela).
