@@ -12,4 +12,6 @@
 * Используемый шрифт: Roboto (есть в папке с макетом и на Google Fonts).
 * С макетом предоставлен styleguide.psd, содержащий прорисовку состояний элементов интерфейса. При любых расхождениях с макетами он должен иметь наивысший приоритет.
 
-[Сертификат профессии Frontend Developer React](https://assets.htmlacademy.ru/certificates/profession/13/1052393.pdf?1605687308)
+[Сертификат HTML и CSS](https://assets.htmlacademy.ru/certificates/intensive/155/1052393.pdf?1584514156)
+
+[Итоговый сертификат профессии Frontend React Developer](https://assets.htmlacademy.ru/certificates/profession/13/1052393.pdf?1605687308)
